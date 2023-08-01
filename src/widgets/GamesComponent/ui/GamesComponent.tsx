@@ -1,6 +1,6 @@
 import cls from './GamesComponent.module.scss';
 import FolderIcon from '../../../shared/assets/icons/Folder.svg';
-import CloseIcon from '../../../shared/assets/icons/Cross.svg';
+import CloseIcon from '../../../shared/assets/icons/cross.svg';
 import Avatar from '../../../shared/assets/icons/Game.svg';
 import { useEffect } from 'react';
 import { GameObj } from '../../../shared/redux/games/types';

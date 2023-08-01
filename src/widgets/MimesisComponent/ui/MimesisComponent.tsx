@@ -1,5 +1,5 @@
 import cls from './MimesisComponent.module.scss';
-import CloseIcon from '../../../shared/assets/icons/Cross.svg';
+import CloseIcon from '../../../shared/assets/icons/cross.svg';
 import { useDispatch } from 'react-redux';
 import { setCategoryId } from '../../../shared/redux/filter/slice';
 import { WindowIcon } from '../../../shared/ui/WindowIcon';

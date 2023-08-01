@@ -1,7 +1,7 @@
 import cls from './GameInfo.module.scss';
 import FolderIcon from '../../../shared/assets/icons/Folder.svg';
 import AvatarIcon from '../../../shared/assets/icons/Game.svg';
-import CloseIcon from '../../../shared/assets/icons/Cross.svg';
+import CloseIcon from '../../../shared/assets/icons/cross.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { setIsVisible } from '../../../shared/redux/chooseGame/slice';
 import { RootState } from '../../../shared/redux/store';
