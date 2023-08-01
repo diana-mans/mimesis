@@ -1,0 +1,28 @@
+.Icon {
+  position: relative;
+  top: 6px;
+  width: 48px;
+  height: 48px;
+
+  g {
+    mix-blend-mode: color;
+
+    path {
+      fill: var(--secondary-bg-color);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Icon {
+    width: 20px;
+    height: 20px;
+  }
+}

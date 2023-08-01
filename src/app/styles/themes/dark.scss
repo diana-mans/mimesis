@@ -1,0 +1,16 @@
+.app.dark {
+  --bg-color: #181425;
+  --secondary-bg-color: #0212fe;
+  --primary-color: #ffffff;
+  --scroll-color: #3c3453;
+
+  --circle-right: 84px;
+
+  @media (max-width: 700px) {
+    --circle-right: 70px;
+  }
+
+  @media (max-width: 500px) {
+    --circle-right: 56px;
+  }
+}

@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'variables/global';
+@import 'themes/light';
+@import 'themes/dark';
+@import 'themes/newYear';
+
+.app {
+  font-family: var(--font-family-main);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: contain;
+  color: var(--primary-color);
+
+  min-height: 100vh;
+}

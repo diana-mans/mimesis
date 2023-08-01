@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Tahoma;
+  src: url(../../../shared/assets/fonts/windows-xp-tahoma/windows-xp-tahoma.ttf);
+}
+
+:root {
+  --font-family-main: Tahoma;
+
+  --font-size-h1: 72px; //Мимемис, НАЗВАНИЕ ИГРЫ
+  --font-size-h2: 48px; //Игры, название игры
+
+  --font-size-theme: 54px; //тема внизу
+  --font-size-share: 32px; //поделиться и кнопки с текстом
+
+  --font-size-name: 28px; //название игры под иконками
+  --font-size-desc: 40px; //описание игры
+
+  @media (max-width: 700px) {
+    --font-size-h1: 52px;
+    --font-size-h2: 32px;
+
+    --font-size-theme: 42px;
+    --font-size-share: 26px;
+
+    --font-size-name: 22px;
+    --font-size-desc: 28px;
+  }
+
+  @media (max-width: 500px) {
+    --font-size-h1: 32px;
+    --font-size-h2: 24px;
+
+    --font-size-theme: 32px;
+    --font-size-share: 20px;
+
+    --font-size-name: 16px;
+    --font-size-desc: 22px;
+  }
+}

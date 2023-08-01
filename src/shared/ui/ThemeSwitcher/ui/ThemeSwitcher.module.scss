@@ -1,0 +1,81 @@
+.ThemeSwitcher {
+  display: flex;
+  position: relative;
+  top: 47px;
+  height: 40px;
+}
+
+.toggleText {
+  font-size: var(--font-size-theme);
+  margin-right: 20px;
+}
+
+.switcherGroup {
+  cursor: pointer;
+}
+
+.switch {
+  width: 93px;
+  height: 40px;
+
+  path {
+    fill: var(--primary-color);
+  }
+}
+
+.circle {
+  width: 26px;
+  height: 27px;
+  position: relative;
+  right: var(--circle-right);
+  bottom: 7px;
+  path {
+    fill: var(--primary-color);
+  }
+}
+
+@media (max-width: 700px) {
+  .ThemeSwitcher {
+    top: 30px;
+    height: 20px;
+  }
+
+  .toggleText {
+    margin-right: 15px;
+  }
+
+  .switch {
+    width: 77px;
+    height: 33px;
+  }
+
+  .circle {
+    width: 22px;
+    height: 22px;
+    right: var(--circle-right);
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ThemeSwitcher {
+    top: 30px;
+    height: 20px;
+  }
+
+  .toggleText {
+    margin-right: 10px;
+  }
+
+  .switch {
+    width: 62px;
+    height: 26px;
+  }
+
+  .circle {
+    width: 17px;
+    height: 17px;
+    right: var(--circle-right);
+    bottom: 4px;
+  }
+}

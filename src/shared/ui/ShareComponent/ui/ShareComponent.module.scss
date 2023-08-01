@@ -1,0 +1,56 @@
+.socialIcons {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+    g {
+      path {
+        fill: var(--primary-color);
+      }
+    }
+
+    path {
+      stroke: var(--primary-color);
+    }
+  }
+}
+
+.shareText {
+  font-size: var(--font-size-share);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .socialIcons {
+    width: 180px;
+
+    svg {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .shareText {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .socialIcons {
+    width: 156px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .shareText {
+    margin-bottom: 10px;
+  }
+}

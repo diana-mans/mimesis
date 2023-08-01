@@ -1,0 +1,16 @@
+.app.light {
+  --bg-color: #f2f2f2;
+  --secondary-bg-color: #f2f2f2;
+  --primary-color: #29213b;
+  --scroll-color: #322642;
+
+  --circle-right: 34px;
+
+  @media (max-width: 700px) {
+    --circle-right: 26px;
+  }
+
+  @media (max-width: 500px) {
+    --circle-right: 22px;
+  }
+}

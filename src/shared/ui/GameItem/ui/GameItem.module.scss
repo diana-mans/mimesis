@@ -1,0 +1,52 @@
+.gameItem {
+  width: 138px;
+  height: 138px;
+  text-align: center;
+  margin: 12px;
+
+  .gameAvatar {
+    svg {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .gameName {
+    font-size: var(--font-size-name);
+  }
+}
+
+@media (max-width: 1450px) {
+  .gameItem {
+    margin: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .gameItem {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+
+    .gameAvatar {
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .gameItem {
+    width: 84px;
+    height: 84px;
+    margin: 8px;
+
+    .gameAvatar {
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}

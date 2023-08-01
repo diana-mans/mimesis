@@ -1,0 +1,178 @@
+.GameComponent {
+  width: 80vw;
+  height: 635px;
+  position: relative;
+  margin: 70px auto 0px;
+  border: 8px solid var(--primary-color);
+  background-color: var(--bg-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerItem {
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+.folderIcon {
+  width: 48px;
+  height: 40px;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-left: 20px;
+}
+
+.CloseIcon {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: 15px;
+
+  path {
+    fill: var(--bg-color);
+  }
+}
+
+.GamesContainer {
+  width: 100%;
+  height: 556px;
+  padding: 25px 10px;
+  overflow-y: scroll;
+  scrollbar-width: 40px;
+  scrollbar-color: var(--scroll-color);
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.GamesContainer::-webkit-scrollbar {
+  background-color: #f9f9fd;
+  width: 25px;
+  cursor: pointer;
+}
+
+.GamesContainer::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid var(--scroll-color);
+}
+
+.GamesContainer::-webkit-scrollbar-track {
+  background-color: var(--scroll-color);
+}
+
+.GamesContainer::-webkit-scrollbar-button:decrement:start {
+  height: 24px;
+  display: block;
+  border: 1px solid var(--scroll-color);
+  background-color: #fff;
+  background-image: url('../../../shared/assets/icons/Vector-up.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.GamesContainer::-webkit-scrollbar-button:increment:end {
+  height: 24px;
+  display: block;
+  border: 1px solid var(--scroll-color);
+  background-image: url('../../../shared/assets/icons/Vector-down.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-height: 1060px) {
+  .GameComponent {
+    height: 540px;
+  }
+
+  .GamesContainer {
+    height: calc(540px - 79px);
+  }
+}
+
+@media (max-width: 700px) {
+  .GameComponent {
+    top: 10px;
+    width: 85vw;
+    height: 460px;
+    margin: 10px auto;
+    border: 5px solid var(--primary-color);
+  }
+  .GamesContainer {
+    height: 405px;
+    padding: 5px 5px;
+    scrollbar-width: 15px;
+  }
+  .GamesContainer::-webkit-scrollbar {
+    width: 15px;
+  }
+  .GamesContainer::-webkit-scrollbar-button:decrement:start {
+    height: 15px;
+    background-size: 5px;
+  }
+
+  .GamesContainer::-webkit-scrollbar-button:increment:end {
+    height: 15px;
+    background-size: 5px;
+  }
+
+  .header {
+    height: 45px;
+  }
+
+  .folderIcon {
+    width: 29px;
+    height: 27px;
+  }
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  .CloseIcon {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .GameComponent {
+    top: 13px;
+    width: 90vw;
+    height: 460px;
+    margin: 10px auto;
+    border: 3px solid var(--primary-color);
+  }
+  .GamesContainer {
+    height: 424px;
+    padding: 5px 5px;
+  }
+
+  .header {
+    height: 30px;
+  }
+
+  .folderIcon {
+    width: 24px;
+    height: 20px;
+  }
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  .CloseIcon {
+    width: 16px;
+    height: 16px;
+    top: 7px;
+  }
+}

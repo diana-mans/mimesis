@@ -1,0 +1,284 @@
+.GameInfo {
+  width: 65vw;
+  height: 725px;
+  position: absolute;
+  top: 19vh;
+  left: 18vw;
+  padding: 8px;
+  background-color: var(--bg-color);
+
+  .infoContainer {
+    width: calc(65vw - 16px);
+    height: calc(725px - 16px);
+    border: 8px solid var(--primary-color);
+  }
+}
+
+.folderIcon {
+  width: 48px;
+  height: 40px;
+}
+
+.avatarIconMini {
+  position: relative;
+  bottom: 5px;
+  width: 48px;
+  height: 48px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerItem {
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-right: 30px;
+}
+
+.CloseIcon {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+
+  path {
+    fill: var(--bg-color);
+  }
+}
+
+.container {
+  text-align: center;
+  padding: 25px;
+  height: 630px;
+  overflow-y: scroll;
+  scrollbar-width: 40px;
+  scrollbar-color: var(--scroll-color);
+
+  .avatarIcon {
+    width: 138px;
+    height: 138px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: var(--font-size-h1);
+  }
+
+  p {
+    font-size: var(--font-size-desc);
+    margin: 40px 30%;
+  }
+
+  .choose {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    margin-bottom: 50px;
+
+    div {
+      border: 3px solid var(--primary-color);
+      margin-right: 15px;
+      padding: 10px 25px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font: var(--font-size-share) var(--font-family-main);
+      }
+    }
+
+    .choosePlay {
+      background-color: var(--primary-color);
+
+      a {
+        color: var(--bg-color);
+      }
+    }
+  }
+}
+
+.container::-webkit-scrollbar {
+  background-color: #f9f9fd;
+  width: 25px;
+  cursor: pointer;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid var(--scroll-color);
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: var(--scroll-color);
+}
+
+.container::-webkit-scrollbar-button:decrement:start {
+  height: 24px;
+  display: block;
+  border: 1px solid var(--scroll-color);
+  background-color: #fff;
+  background-image: url('../../../shared/assets/icons/Vector-up.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container::-webkit-scrollbar-button:increment:end {
+  height: 24px;
+  display: block;
+  border: 1px solid var(--scroll-color);
+  background-image: url('../../../shared/assets/icons/Vector-down.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-height: 1000px) {
+  .GameInfo {
+    height: 660px;
+
+    .infoContainer {
+      height: calc(660px - 16px);
+    }
+  }
+  .container {
+    height: calc(660px - 95px);
+
+    p {
+      margin: 25px 22%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .GameInfo {
+    height: 530px;
+    top: 7vh;
+    padding: 5px;
+    .infoContainer {
+      height: calc(530px - 10px);
+      border-width: 5px;
+    }
+  }
+  .header {
+    height: 50px;
+  }
+  .container {
+    scrollbar-width: 15px;
+    height: calc(530px - 70px);
+    .avatarIcon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 40px;
+    }
+    p {
+      margin: 25px 5%;
+    }
+    .choose {
+      font-size: 30px;
+    }
+  }
+  .container::-webkit-scrollbar {
+    width: 15px;
+  }
+  .container::-webkit-scrollbar-button:decrement:start {
+    height: 15px;
+    background-size: 5px;
+  }
+
+  .container::-webkit-scrollbar-button:increment:end {
+    height: 15px;
+    background-size: 5px;
+  }
+  .folderIcon {
+    width: 29px;
+    height: 27px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+
+  .avatarIconMini {
+    bottom: 2px;
+    width: 30px;
+    height: 30px;
+  }
+  .CloseIcon {
+    width: 22px;
+    height: 22px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .GameInfo {
+    width: 336px;
+    height: 461px;
+    top: 7vh;
+    padding: 3px;
+
+    .infoContainer {
+      width: calc(336px - 6px);
+      height: 461px;
+      border: 3px solid var(--primary-color);
+
+      .header {
+        height: 30px;
+      }
+    }
+  }
+
+  .folderIcon {
+    width: 24px;
+    height: 20px;
+  }
+
+  .avatarIconMini {
+    width: 24px;
+    height: 24px;
+    bottom: 3px;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .container {
+    scrollbar-width: 15px;
+    height: calc(461px - 36px);
+    .avatarIcon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 25px;
+    }
+    p {
+      margin: 25px 5%;
+    }
+  }
+  .CloseIcon {
+    width: 16px;
+    height: 16px;
+    top: 7px;
+  }
+
+  .choose {
+    div {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .GameInfo {
+    left: 10vw;
+  }
+}
