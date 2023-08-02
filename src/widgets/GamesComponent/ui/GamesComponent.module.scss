@@ -49,9 +49,12 @@ h2 {
   overflow-y: scroll;
   scrollbar-width: 40px;
   scrollbar-color: var(--scroll-color);
-  display: flex;
-  justify-content: stretch;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(138px, 1fr));
+  justify-content: space-between;
+  grid-row-gap: 20px;
+  grid-column-gap: 15px;
+  align-content: start;
 }
 
 .GamesContainer::-webkit-scrollbar {
@@ -110,6 +113,7 @@ h2 {
     height: 405px;
     padding: 5px 5px;
     scrollbar-width: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
   .GamesContainer::-webkit-scrollbar {
     width: 15px;
@@ -155,6 +159,9 @@ h2 {
   .GamesContainer {
     height: 424px;
     padding: 5px 5px;
+    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
   }
 
   .header {

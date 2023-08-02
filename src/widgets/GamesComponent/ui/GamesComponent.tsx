@@ -23,7 +23,7 @@ export const GamesComponent = () => {
 
   useEffect(() => {
     const gamesDown: GameObj[] = [];
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < 20; i++) {
       gamesDown.push(gameExample);
     }
     dispatch(setGames(gamesDown));
